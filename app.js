@@ -59,13 +59,7 @@ window.addEventListener('load' , () => {
 
   })
   
-  if (  temparature.textContent < 32 &&  temparature.textContent > 25 ) {
-
-    description.textContent = "It's a nice weather";
-    bodyy.style.background =  linearGradient(rgb(47,158,1), rgb(48,62,190)) ;
-    
-
-  }
+  
 
 })
 })
