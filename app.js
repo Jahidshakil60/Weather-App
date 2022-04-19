@@ -32,22 +32,22 @@ window.addEventListener('load' , () => {
 
     location.textContent = name;
 
-  if (temparature.textContent <32 && temparature.textContent >25 ) {
+    if (  temparature.textContent < 32 &&  temparature.textContent > 25 ) {
 
-    description.textContent = "It's a nice weather";
-    bodyy.style.background =  linearGradient(rgb(47,158,1), rgb(48,62,190)) ;
-    
+      description.textContent = "It's a nice weather";
+      bodyy.style.background =  linearGradient(rgb(47,158,1), rgb(48,62,190)) ;
+      
+  
+    }
+      if (temparature.textContent >32 ) {
 
-  }
-  else if (temparature.textContent >32 ) {
+      description.textContent = "it's hot";
+      bodyy.style.background =  linearGradient(rgb(47,158,1), rgb(48,62,190)) ;
 
-    description.textContent = "it's hot";
-
-  }
-  else if (temparature.textcontent <25) {
+     }
+    else  {
      description.textContent = "It's cold" ;
-   
-  }
+    }
 
   //  searchButton.addEventListener('click' , function () {
   //   city == searchValue.textContent; 
@@ -58,6 +58,14 @@ window.addEventListener('load' , () => {
     //console.log(temp);
 
   })
+  
+  if (  temparature.textContent < 32 &&  temparature.textContent > 25 ) {
+
+    description.textContent = "It's a nice weather";
+    bodyy.style.background =  linearGradient(rgb(47,158,1), rgb(48,62,190)) ;
+    
+
+  }
 
 })
 })
